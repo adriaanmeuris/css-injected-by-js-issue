@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run build-lib && npm run build-site",
+    "build": "rm -rf ./dist && npm run build-lib && npm run build-site",
     "build-lib": "vite build -c vite.lib.config.js",
     "build-site": "vite build -c vite.site.config.js",
     "preview": "vite preview"
